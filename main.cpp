@@ -1,16 +1,16 @@
-include <iostream>
+#include <iostream.h>
 
-using namespace std;
-
-int main()
-{
-    int n1,n2, r;
-
-    cout << "Ingrese 1 número " << endl;
-    cin >>n1
-    cout<<"Ingrese 1 numero ";
-    cin >>n2
-    r=n1+n2
-    cout<<"\n la suma de n1+n2"<<" es:"<<r;
-    return 0;
+int main(){
+    int a,b,suma;
+    cout<<"\n ingrese numero a:";
+    cin>>a;
+    cout<<"\n ingrese numero b:";
+    cin>>b;
+    cout<<"\n ingrese numero c:";
+    cin>>c;
+    cout<<"\n ingrese numero d:";
+    cin>>c;
+    suma=a+b+c+d;
+    cout<<"\n la suma de "<<a<<"+"<<b<<"+"<<"c"<<"+"<<"d"<<"es:"<<suma;
+return 0;
 }
