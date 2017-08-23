@@ -2,3 +2,5 @@
 *.cbp
 bin/
 obj/
+*.exe
+*.o
