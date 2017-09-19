@@ -1,6 +1,21 @@
 #include <iostream>
 
 using namespace std;
+void invirtiendo(int arr[],int n,int k){
+        arr[k],arr[n]=arr[n],arr[k];
+        if (k==n)
+            return;
+        invirtiendo(arr,n-1,k+1);
+    }
+void invertirR(int arr[],int n){
+    int k=0;
+
+
+    invirtiendo(arr,n-1,k);
+        //return 0;
+    }
+
+
 
 void invertir(int arr[],int n){
 
