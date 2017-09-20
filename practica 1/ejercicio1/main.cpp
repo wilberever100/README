@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	int n;
-	cout<<"Enter the size of the array :";
+	cout<<"Ingrese el tamaño del array :";
 	cin>>n;
 	int A[n][n];
 	int len=n,k=1,p=0,i;
