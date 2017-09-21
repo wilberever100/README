@@ -24,17 +24,31 @@ int contaptr(char *ptr){
     }
     return len;
 }
-int dimension(char *ptr){
-    k=ptr;
-    for(;*ptr!='\0';)
+
+
+int len(char *ptr){
+    char *prim=ptr;
+    while(*ptr!='\0'){
         ptr++;
-    ptr-k;
     }
+    return ptr-prim;
+}
+void strcpy(char *s,char *t){
+    int i;
+    i=0;
+    while(*(s+i)=*(t+i)!='\0')
+        i++;
+}
+void ptrcpy(char *s,char *t){
+    while((*s++ = *t++));
+}
 
 int main()
 {
     char str[]="ciencia";
+
     char *ptr;
+    char pa[10];
     ptr=str;
     int a[]={1,2,3,4,5};
     /*int *ptr=&a[0];
@@ -43,6 +57,7 @@ int main()
     }
 
     sumaptr(ptr,5);*/
-    cout<<contaptr(ptr)<<endl<<endl;
+    ptrcpy(pa,ptr);
+    cout<<pa<<endl;
     return 0;
 }
