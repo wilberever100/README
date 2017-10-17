@@ -4,26 +4,22 @@
 using namespace std;
 Jugador::Jugador()
 {
-    cout <<"Ingresa el nombre del jugador: ";
-    cin>>Name;
-    cout <<"Ingresa su dorsal: ";
-    cin>>Number;
-    cout <<"Ingresa su posición: ";
-    cin>>Position;
-    cout <<"Ingresa su agresividad: ";
-    cin>>Agressivity;
+    Name="Pepito";
+    Number=999;
+    Position="Aguatero";
+    Agressivity=0;
     //ctor
 }
 
 
-/*Jugador::Jugador(string x,int y,string z,int a)
+Jugador::Jugador(string x,int y,string z,int a)
 {
     Name=x;
     Number=y;
     Position=z;
     Agressivity=a;
     //dtor
-}*/
+}
 void Jugador::setAgressivity(int agres){
     Agressivity=agres;
 }
@@ -36,7 +32,9 @@ void Jugador::setName(string n){
 void Jugador::setNumber(int num){
     int Number=num;
 }
-
+string getName(){
+    return Name;
+}
 void Jugador::print(){
     cout<<"El "<<Position<<" "<<Name<<" que lleva la camiseta numero "<<Number;
     if (Agressivity>5){

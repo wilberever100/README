@@ -1,25 +1,26 @@
 #include "Equipo.h"
 #include "Jugador.h"
-#include <iostream>
-using namespace std;
-
-string conjuntonombres[10];
-Jugador formacion[10];
-
 Equipo::Equipo()
 {
 
-    for(int i=0;i<11;i++){
-        formacion[i]=Jugador();
-    }
+    Jugador jugador1;
+    Jugador jugador2;
+    Jugador jugador3;
+    Jugador jugador4;
+    Jugador jugador5;
+    Jugador jugador6;
+    Jugador jugador7;
+    Jugador jugador8;
+    Jugador jugador9;
+    Jugador jugador10;
+    Jugador jugador11;
 
     //ctor
 }
 
-void Equipo::jugadores(){
-
+string Equipo::jugadoresNombres(){
     for(int i=0;i<11;i++){
-        formacion[i].print();
+        conjuntonombres[i]=jugadores[i] getName();
     }
 
 }

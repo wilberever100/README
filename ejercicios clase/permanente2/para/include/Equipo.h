@@ -1,15 +1,15 @@
 #ifndef EQUIPO_H
 #define EQUIPO_H
 #include <string>
+#include "Jugador.h"
 
 class Equipo
 {
     public:
 
+
         Equipo();
-        Equipo(jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,jugador9,jugador10,jugador11);
-
-
+        void jugadores();
 };
 
-#endif // EQUIPO_H
+#endif // EQUIPO_Hgdb
