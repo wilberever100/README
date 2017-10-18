@@ -3,13 +3,13 @@
 #include <iostream>
 using namespace std;
 
-string conjuntonombres[10];
-Jugador formacion[10];
 
-Equipo::Equipo()
+
+Equipo::Equipo(string nom,int can)
 {
-
-    for(int i=0;i<11;i++){
+    nombre=nom;
+    cantidad=can;
+    for(int i=0;i<cantidad;i++){
         formacion[i]=Jugador();
     }
 
@@ -18,7 +18,7 @@ Equipo::Equipo()
 
 void Equipo::jugadores(){
 
-    for(int i=0;i<11;i++){
+    for(int i=0;i<cantidad;i++){
         formacion[i].print();
     }
 

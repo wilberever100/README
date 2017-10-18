@@ -5,7 +5,11 @@ using namespace std;
 
 int main()
 {
-    string conjuntamente[11];
+
+
+    Equipo Peru("Peru",1);
+    Peru.jugadores();
+
     /*Jugador jugadores[];
 
     Jugador jugador1("Gallese",1,"Arquero",1);
