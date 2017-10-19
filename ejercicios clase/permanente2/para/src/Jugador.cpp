@@ -2,6 +2,8 @@
 #include <iostream>
 #include "Equipo.h"
 using namespace std;
+
+
 Jugador::Jugador()
 {
     cout <<"Ingresa el nombre del jugador: ";
@@ -45,4 +47,12 @@ void Jugador::print(){
     else{
         cout<<" anda calmado"<< endl;
     }
+}
+void Jugador::printf(){
+    cout<<"Nombre: "<<Name<<endl;
+    cout<<"Dorsal: "<<Number<<endl;
+    cout<<"Posicion: "<<Position<<endl;
+    cout<<"Agresividad: "<<Agressivity<<endl;
+
+
 }

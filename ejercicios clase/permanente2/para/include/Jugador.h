@@ -18,6 +18,7 @@ class Jugador
         void setAgressivity(int agres);
         string getName();
         void print();
+        void printf();
 
 
 

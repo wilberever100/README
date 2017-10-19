@@ -2,14 +2,16 @@
 #include "Jugador.h"
 #include <iostream>
 using namespace std;
-
+Jugador formacion[1];
 
 
 Equipo::Equipo(string nom,int can)
 {
+
     nombre=nom;
     cantidad=can;
-    for(int i=0;i<cantidad;i++){
+    int i=0;
+    while(i++<cantidad){
         formacion[i]=Jugador();
     }
 
@@ -18,8 +20,9 @@ Equipo::Equipo(string nom,int can)
 
 void Equipo::jugadores(){
 
-    for(int i=0;i<cantidad;i++){
-        formacion[i].print();
+    int i=0;
+    while(i++<cantidad){
+        formacion[i].printf();
     }
 
 }

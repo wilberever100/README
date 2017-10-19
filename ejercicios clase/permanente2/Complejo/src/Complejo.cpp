@@ -13,16 +13,16 @@ Complejo::Complejo(int x, int y)
     R=x;
     I=y;
 }
-Complejo Complejo::Sumar(Complejo J)
+Complejo Complejo:: operator +(Complejo J,Complejo K)
 {
-    return Complejo(R+J.R,I+J.I);
+    return Complejo(K.R+J.R,K.I+J.I);
 }
-Complejo Complejo::Restar(Complejo J)
+Complejo Complejo:: operator -(Complejo J)
 {
     return Complejo(R-J.R,I-J.I);
 
 }
-Complejo Complejo::Multiplicar(Complejo J)
+Complejo Complejo:: operator *(Complejo J)
 {
     return Complejo(R*J.R-I*J.I,R*J.I+I*J.R);
 
@@ -34,7 +34,7 @@ bool Complejo::Igualdad(Complejo J)
     else
         return false;
 }
-void Complejo::ProductoEscalar(int r)
+void Complejo::operator+(int r)
 {
     R=R*r;
     I=I*r;

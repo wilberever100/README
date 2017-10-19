@@ -7,7 +7,7 @@ int main()
 {
 
 
-    Equipo Peru("Peru",1);
+    Equipo Peru("Peru",2);
     Peru.jugadores();
 
     /*Jugador jugadores[];

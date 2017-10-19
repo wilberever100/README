@@ -2,15 +2,16 @@
 #define EQUIPO_H
 #include <string>
 #include "Jugador.h"
+#include <iostream>
 using namespace std;
 
 class Equipo
 {
-    public:
 
+    public:
         int cantidad;
         string nombre;
-        Jugador formacion[11];
+
         Equipo(string,int);
         void jugadores();
 };
