@@ -7,9 +7,9 @@ using namespace std;
 
 class Equipo
 {
-    Jugador *data;
-    public:
 
+    public:
+        Jugador* data;
         int cantidad;
         string nombre;
 

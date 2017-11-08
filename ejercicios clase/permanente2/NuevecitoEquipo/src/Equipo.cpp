@@ -18,7 +18,7 @@ void Equipo::jugadores(){
 
     int i=0;
     while(i++<cantidad){
-        formacion[i].printf();
+        data[i].printf();
     }
 
 }

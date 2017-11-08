@@ -40,8 +40,10 @@ void fecha::aumentar(int dias)
                 month=month+1;
             else
                 month=1;
+                year=year+1;
         }
     }
+
     cout<<"ahora la fecha es "<<day<<"/"<<month<<"/"<<year<<endl;
     //dtor
 }

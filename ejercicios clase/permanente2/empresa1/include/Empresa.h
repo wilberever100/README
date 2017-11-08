@@ -8,7 +8,7 @@
 class Empresa
 {
         string Nombre;
-        int Tamaño;
+        int Tamanio;
         int RUC;
     protected:
         int departamentos;
@@ -22,7 +22,7 @@ class Empresa
         Empresa InsertarEmpl();
         Empresa Aumento(string p);
         void setNombre(string nom);
-        void setTamaño(int tam);
+        void setTamanio(int tam);
         void setRUC(int rc);
         void Imprimir();
 };
